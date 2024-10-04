@@ -9,8 +9,8 @@ body {
 }
 
 header {
-    background-color: #004a89;
-    color: white;
+    background-color: #3cb371;
+	color: white;
     padding: 50px;
     text-align: center;
 }
@@ -96,3 +96,23 @@ footer ul li a {
     color: white;
     text-decoration: none;
 }
+
+/* Basic styling */
+.sub-list {
+            display: none; /* Initially hide sub-lists */
+            margin-left: 20px; /* Indent sub-lists */
+}
+.semester {
+            cursor: pointer; /* Show pointer cursor on hover */
+            color: blue; /* Color for clickable items */
+            text-decoration: underline; /* Underline clickable items */
+ }
+ 
+     /* Logo styling */
+        .logo {
+            position: absolute; /* Position the logo absolutely */
+            top: 0px; /* Distance from the top */
+            left: 0px; /* Distance from the left */
+            width: 240px; /* Set the width of the logo */
+            height: auto; /* Maintain aspect ratio */
+        }

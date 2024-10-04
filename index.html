@@ -12,7 +12,8 @@
         <div class="banner">
             <h1>Data Science Master's Program</h1>
             <p>Empowering Future Data Scientists to Drive Innovation</p>
-            <a href="#apply" class="btn">Apply Now</a>
+			<img src="University_Logo.jpeg" alt="Logo" class="logo"> <!-- Replace 'logo.png' with the path to your logo image -->
+			<a href="#apply" class="btn">Apply Now</a>
         </div>
     </header>
 
@@ -32,12 +33,116 @@
     </section>
 
     <section id="curriculum">
-        <h2>Curriculum</h2>
+        <h2>Curriculum (Masters in Data Science)</h2>
+	
         <ul>
-            <li>Machine Learning</li>
-            <li>Data-Centered Programming</li>
-            <li>Big Data Analytics</li>
-            <li>Capstone Project</li>
+            <li class="semester">Semester 1: Foundations of Data Science 
+					<ul class="sub-list">
+						<li>1.	Introduction to Data Science & Programming</li>
+							<ul class="sub-list">
+								<li>	Overview of data science, ethics, and lifecycle.</li>
+								<li>	Programming in Python/R, working with Pandas, NumPy for data manipulation.</li>
+							</ul>
+
+						<li>2.	Statistics & Data Preprocessing</li>
+							<ul class="sub-list">
+								o	Key statistics (probability, distributions, hypothesis testing).
+								o	Data acquisition, cleaning, preprocessing, and feature engineering.
+							</ul>
+					</ul>
+			</li>
+
+
+            <li class="semester">Semester 2: Machine Learning and Data Analytics  
+					<ul class="sub-list">
+						<li>1.	Machine Learning & Data Mining</li>
+							<ul class="sub-list">
+								o	Supervised/unsupervised learning, algorithms (regression, clustering, decision trees).
+								o	Data mining techniques and big data tools like Hadoop and Spark.
+							</ul>
+
+						<li>2.	Data Visualization & Databases</li>
+							<ul class="sub-list">
+								o	Data visualization (Tableau, Seaborn), storytelling with data.
+								o	SQL/NoSQL databases, querying structured/unstructured data.
+							</ul>
+					</ul>
+			</li>
+
+
+
+            <li class="semester">Semester 3: Advanced Machine Learning Techniques 
+					<ul class="sub-list">
+						<li>1.	Deep Learning & Natural Language Processing (NLP)</li>
+							<ul class="sub-list">
+								<li>	o	Neural networks (CNNs, RNNs), deep learning in image and text analysis.
+										o	NLP techniques (sentiment analysis, topic modeling, Word2Vec).
+							</ul>
+
+						<li>2.	Time Series Analysis & Cloud Computing</li>
+							<ul class="sub-list">
+								o	Forecasting methods (ARIMA, SARIMA) for time-dependent data.
+								o	Cloud platforms (AWS, Google Cloud), distributed data processing, big data tools.
+							</ul>
+					</ul>
+			</li>
+
+
+            <li class="semester">Semester 4: Specialization and Capstone Preparation 
+					<ul class="sub-list">
+						<li>1.	Advanced Machine Learning & Specialization</li>
+							<ul class="sub-list">
+								<li>	o	Ensemble methods, dimensionality reduction, model tuning.
+										o	Specialization: Healthcare Analytics, Financial Data Science, Marketing Analytics, or Geospatial Data Science.
+								</li>
+								
+							</ul>
+
+						<li>2.	Capstone Project Preparation & Data Ethics</li>
+							<ul class="sub-list">
+								o	Capstone project planning with real-world problem-solving.
+								o	Ethics, privacy, and data security in data science.
+
+							</ul>
+					</ul>
+			</li>
+
+
+
+            <li class="semester">Semester 5: Internship & Capstone I 
+					<ul class="sub-list">
+						<li>1.	Industry Internship I</li>
+							<ul class="sub-list">
+								<li>	Overview of data science, ethics, and lifecycle.</li>
+								<li>	Programming in Python/R, working with Pandas, NumPy for data manipulation.</li>
+							</ul>
+
+						<li>2.	Capstone Project I</li>
+							<ul class="sub-list">
+								o	Key statistics (probability, distributions, hypothesis testing).
+								o	Data acquisition, cleaning, preprocessing, and feature engineering.
+							</ul>
+					</ul>
+			</li>
+
+
+
+            <li class="semester">Semester 6: Advanced Internship & Capstone II 
+					<ul class="sub-list">
+						<li>1.	Industry Internship II</li>
+							<ul class="sub-list">
+								<li> Another 4-month internship in a specialized area of data science to deepen industry experience.</li>
+							</ul>
+
+						<li>2.	Capstone Project II & Thesis</li>
+							<ul class="sub-list">
+								Finalize and present the capstone project, demonstrating mastery of skills and real-world problem-solving
+							</ul>
+					</ul>
+			</li>
+
+
+
         </ul>
     </section>
 
@@ -63,7 +168,7 @@
     <section id="admissions">
         <h2>Admissions</h2>
         <p>Learn more about our admissions process, requirements, and deadlines.</p>
-        <a href="/apply" class="btn">Apply Now</a>
+        <a href="https://www.uregina.ca/admissions/apply.html" class="btn">Apply Now</a>
     </section>
 	
 	<section id="contact">
@@ -87,5 +192,24 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </footer>
+	
+
+<script>
+    // Get all elements with the class "semester"
+    const semesters = document.querySelectorAll('.semester');
+
+    // Loop through each semester
+    semesters.forEach(semester => {
+        semester.addEventListener('click', function() {
+            // Toggle the display of the sub-list
+            const subList = this.querySelector('.sub-list');
+            if (subList.style.display === 'none' || subList.style.display === '') {
+                subList.style.display = 'block'; // Show the sub-list
+            } else {
+                subList.style.display = 'none'; // Hide the sub-list
+            }
+        });
+    });
+</script>	
 </body>
 </html>
